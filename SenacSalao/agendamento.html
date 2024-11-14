@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/agenda.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <div class="background-azul">
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                       <a href="index.html"><img src="img/logo.png" height="60" width="85"></a>
+                    </div>
+                    <ul class="ul">
+                        <li><a href="index.html">Início</a></li>
+                            <li><a href="sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="agendamento.html">Agendamentos</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                           
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="img/menu.png" alt="">
+                    </div>
+                </nav>
+            </div>     
+        </header>
+    </div>
+
+    <!-- Background com imagem e overlay -->
+    <section class="agendamento-background">
+        <div class="overlay"></div>
+        <div class="agendamento-frame">
+            <div class="agendamento-box">
+                <h2>Agende seu Serviço</h2>
+                <form id="agendamento-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" oninput="validarCPF(this)" maxlength="11" required>
+                    
+            
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone"  oninput="validarFONE(this)" maxlength="11"required>
+
+                    <label for="servico">Serviço:</label>
+                    <p>Serviços (tabela sujeita a reajustes)</p>
+                    <select id="servico" name="servico" required>
+                        <option value="" disabled selected>Selecione um serviço</option>
+                        <option value="cabeleleira">Cabeleleira</option>
+                        <option value="manicure">Manicure e Pedicure</option>
+                        <option value="sobrancelha">Sobrancelha e Maquiagem</option>
+                        <option value="massagem">Massagem</option>
+                        <option value="esteticista">Esteticista</option>
+                        <option value="gel">Unha em Gel</option>
+                        <option value="epilacaof">Epilação Feminina- com cera</option>
+                        <option value="epilacaom">Epilação Masculina - com cera</option>
+                    </select>
+
+         <label for="sub">Subcategoria</label>
+             <div id="subcategoria" class="hidden">
+             <select id="subcategoria-selecao" name="subcategoria" required>
+             <option value="" disabled selected>Selecione uma Subcategoria</option>           
+             <option value="0">Realinhamento Térmico (Tiol de amônio) + Tratamento c/finalização</option>
+             
+            </div>   
+
+     <select>
+            <div id="preco" class="hidden">
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco-valor" name="preco" readonly>
+            </div>                                
+  
+        
+            <label for="data">Data:</label>
+            <option value="" disabled selected>Selecione uma Subcategoria</option>
+                    <input type="date" id="data" name="data" required>
+
+                    <label for="horario">Horário:</label>
+                    <select id="horario" name="horario" required></select>    
+            
+            <div id="agendamento-form">
+                        <!-- Seus campos aqui -->
+                <button type="submit" class="btn-gradiente">Agendar</button>
+            </div> 
+          
+    </select>
+    </form>
+                       
+        
+    </section>
+  
+    <footer>
+   
+        <div class="func">
+            <h3>Horário de Funcionamento</h3>
+          
+            <p>Segunda a sexta-feira, das 8h às 18h, sábados, das 9h às 15h.
+                Atendimento com horário marcado.
+                Contatos
+                (81) 3413.6688 / 6647
+             </p>
+        </div>
+       
+</footer> 
+    <script src="js/main.js"></script>
+    <script src="js/agenda.js"></script>
+  
+   
+
+
+
+</body>
+</html>

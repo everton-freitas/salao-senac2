@@ -1,0 +1,42 @@
+
+.sobre{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 1px solid #dbe1e7;
+}
+.cards{
+    margin-top: 2.5em;
+}
+.container{
+    margin-right: auto;    
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 800px;
+}
+.people-cards{
+    margin-top: 2.5em;
+}
+
+.efeito:hover{
+    outline: 5px solid #1247e5;
+    outline-offset: -5px;
+}
+.people-cards__card:hover .people-cards__avatar img{
+    transform: translateY(-50%);
+}
+
+.img__image{
+    width: 100%;
+}
+
+.titulo__title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+}
+.texto__text{
+    color: #929da5;
+    font-size: 14px;    
+    font-family: sar;
+}
